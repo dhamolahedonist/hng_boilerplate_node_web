@@ -2,7 +2,7 @@
 
 ## API Design
 
-Hosted API design: [API Design Documentation](https://kaleabendrias.github.io/hosted_json/)
+Hosted API design: [API Design Documentation](https://app.swaggerhub.com/apis/King-Mikaelson/hng-stage_three/1.0.0)
 
 ## Database Design Image
 
