@@ -1,8 +1,16 @@
-# [App Name] Integration Documentation
+# HNG_STAGE_THREE Integration Documentation
+
+## API Design
+
+Hosted API design: [API Design Documentation](https://kaleabendrias.github.io/hosted_json/)
+
+## Database Design Image
+
+Hosted database design: [Database Design](https://drive.google.com/file/d/1YiLlHGrXWvBmb_G1aOxTgxr94BKOf4Wb/view?usp=sharing)
 
 ## Overview
 
-[Description]
+HNG_STAGE_THREE is a Node.js TypeScript project that provides a comprehensive API for user and organisation management, including features like user authentication, social login, password management, and CRUD operations for organisations.
 
 ## Folder Structure
 
@@ -41,16 +49,13 @@ Before you begin, ensure you have the following installed on your machine:
 
 ## Contribution Guide
 
-## Getting Started
+### If you don't have git on your machine, [install it](https://docs.github.com/en/get-started/quickstart/set-up-git).
 
-#### If you don't have git on your machine, [install it](https://docs.github.com/en/get-started/quickstart/set-up-git).
+### Fork this Repository
 
-## Fork this repository
+Fork this repository by clicking on the fork button on the top of this page. This will create a copy of this repository in your account.
 
-Fork this repository by clicking on the fork button on the top of this page.
-This will create a copy of this repository in your account.
-
-## Clone the repository
+### Clone the Repository
 
 <img align="right" width="300" src="https://firstcontributions.github.io/assets/Readme/clone.png" alt="clone this repository" />
 
@@ -74,7 +79,7 @@ git clone git@github.com:this-is-you/first-contributions.git
 
 where `this-is-you` is your GitHub username. Here you're copying the contents of the first-contributions repository on GitHub to your computer.
 
-## Create a branch
+### Create a Branch
 
 Change to the repository directory on your computer (if you are not already there):
 
@@ -91,7 +96,7 @@ git switch -c your-new-branch-name
 For example:
 
 ```bash
-git switch -c add-alonzo-church
+git switch -c branch_name
 ```
 
 ### Make Changes
@@ -106,7 +111,7 @@ Run the existing tests to ensure your changes do not break anything. If you adde
 npm run test
 ```
 
-## commit those changes
+### Commit Those Changes
 
 Now open `Contributors.md` file in a text editor, add your name to it. Don't add it at the beginning or end of the file. Put it anywhere in between. Now, save the file.
 
@@ -116,28 +121,23 @@ If you go to the project directory and execute the command `git status`, you'll 
 
 Add those changes to the branch you just created using the `git add` command:
 
-## Push changes to GitHub
+### Push Changes to GitHub
 
 Push your changes using the command `git push`:
 
 ```bash
-git push -u origin your-branch-name
+git push -u origin main
 ```
-
-replacing `your-branch-name` with the name of the branch you created earlier.
-
-<details>
-<summary> <strong>If you get any errors while pushing, click here:</strong> </summary>
 
 - ### Authentication Error
      <pre>remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
   remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
-  fatal: Authentication failed for 'https://github.com/<your-username>/first-contributions.git/'</pre>
+  fatal: Authentication failed for 'https://github.com/kaleabendrias/first-contributions.git/'</pre>
   Go to [GitHub's tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) on generating and configuring an SSH key to your account.
 
 </details>
 
-## Submit your changes for review into Staging
+### Submit Your Changes for Review into Staging
 
 If you go to your repository on GitHub, you'll see a `Compare & pull request` button. Click on that button.
 
@@ -156,8 +156,8 @@ Soon your changes will be merged into the staging branch of this project. You wi
 First, clone the repository to your local machine using Git.
 
 ```sh
-git clone https://github.com/your-username/[app-name].git
-cd [app-name]
+git clone https://github.com/kaleabendrias/hng_boilerplate_node_web.git
+cd hng_boilerplate_node_web
 ```
 
 ### 2. Install Dependencies
@@ -213,12 +213,10 @@ Here's an overview of the project's folder structure:
 ```
 |--- src
 |    |--- controllers
-          |--- v1
 |    |--- database
 |    |--- interfaces
 |    |--- middlewares
 |    |--- routes
-|         |--- v1
 |    |--- services
 |    |--- utils
 |    |--- server.ts
@@ -247,10 +245,6 @@ Here are some useful npm scripts that you can use during development and product
 
 By following these steps, you should have your Node.js and TypeScript application up and running. If you encounter any issues, please refer to the documentation of the respective tools or seek help from the community.
 
-## API Endpoints
-
-All API endpoints can be referenced in the [API Reference](API_REFERENCE.md) document.
-
 ## Versioning
 
-This project is versioned to ensure backward compatibility and easy maintenance. The current version is [version].
+This project is versioned to ensure backward compatibility and easy maintenance. The current version is [v1].
